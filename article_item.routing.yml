@@ -1,0 +1,7 @@
+article_item.article_list:
+  path: '/article-item/articles'
+  defaults:
+    _controller: '\Drupal\article_item\Controller\ArticleController::page'
+    _title: 'Our custom Article list'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,13 @@
+<section class="article_list">
+    {% if title %}
+        <h4>{{ title }}</h4>
+    {% endif %}
+    {% for article in items %}
+        <div class="article_item">
+            <h2 class="title_article">{{ article.title }}</h2>
+            <p class="desc_article">{{ article.body }}</p>
+        </div>
+    {% endfor %}
+
+</section>
+
