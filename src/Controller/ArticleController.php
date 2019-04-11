@@ -24,6 +24,7 @@ class ArticleController extends ControllerBase
             $items[] = array (
                 'title' => $nod->title->value,
                 'body' => $nod->body->value,
+                'image' => file_create_url($nod->field_image->offsetGet(0)->get('entity')->getValue()->getFileUri()),
             );
         }
         return array(

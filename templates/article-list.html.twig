@@ -4,8 +4,15 @@
     {% endif %}
     {% for article in items %}
         <div class="article_item">
-            <h2 class="title_article">{{ article.title }}</h2>
-            <p class="desc_article">{{ article.body }}</p>
+            <div class="img_article">
+                <img class="img-responsive" src="{{ article.image }}">
+            </div>
+            <h2 class="title_article">
+                {{ article.title }}
+            </h2>
+            <p class="desc_article">
+                {{ article.body }}
+            </p>
         </div>
     {% endfor %}
 
