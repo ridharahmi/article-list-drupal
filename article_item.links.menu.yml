@@ -1,0 +1,5 @@
+article_item.article_list:
+  title: 'Article List'
+  description: 'Article List Item'
+  parent: system.admin_config_ui
+  route_name: article_item.article_list
